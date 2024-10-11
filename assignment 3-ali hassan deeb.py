@@ -1,3 +1,5 @@
+#assignment 3
+
 def count_tags(html_code, tag):
     return html_code.count(f'<{tag}>')
 
@@ -33,3 +35,4 @@ while True:
         
     else:
         print("Invalid choice. Please try again.")
+    
