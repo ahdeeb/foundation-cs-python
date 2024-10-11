@@ -24,7 +24,22 @@ while True:
         print(f"The maximum number is: {numbers[-1]}")
     
     elif user_choice == 3:
-        html_code = input("Enter the HTML code: ")  # Get HTML code from user
+        html_code = """<html>
+<head>
+<title>My Website</title>
+</head>
+<body>
+<h1>Welcome to my website!</h1>
+<p>Here you'll find information about me and my hobbies</p>
+<h2>Hobbies</h2>
+<ul>
+<li>Playing guitar</li>
+<li>Reading books</li>
+<li>Traveling</li>
+<li>Writing cool h1 tags</li>
+</ul>
+</body>
+</html>"""
         tag = input("Enter the tag to count: ").strip()
         count = count_tags(html_code, tag)
         print(f"The tag <{tag}> occurs {count} times.")
